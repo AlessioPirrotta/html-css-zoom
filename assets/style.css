@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: sans-serif;
+}
+
 body{
-  
+
     width: 99,5vw;
-    border: 1px red solid;
+    
     background-color: black;
     padding: 4% 4% 0 4%;
     position: relative;
@@ -17,26 +21,76 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap: 2px;
+    column-gap: 5px;
     row-gap: 10px;
 
 
 }
 
 
-p{
-    color: white;
+div.view-settings{
     position: absolute;
-    top: 0px;
-    right: 0;
+    display: flex;
+    top: 3px;
+    right: 3px;
+    gap: 10px;
 }
+
+.speaker{
+    background-color: #4a4a4a;
+    height: 20px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.window{
+    background-color: #4a4a4a;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    fill: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pincopallo{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    bottom: 0;
+    width: 60%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.pinco{
+    font-size: 12px;
+}
+
+
 
 .cont{
     width: 195px;
-    height: 100px;
-    border: 1px red solid;
+    height: 130px;
+    
+    position: relative;
 
 }
+.mute{
+    fill: white;
+    height: 15px;
+}
+
 
 div.downbar{
     width: 100%;
@@ -45,6 +99,17 @@ div.downbar{
     position: absolute;
     left: 0;
     margin-top: 20px;
+}
+
+img{
+    width: 195px;
+    height: 130px;
+    display: block;
+    object-fit: cover;
+    opacity: 0.7;
+    position: absolute;
+    z-index: -1;
+
 
 
 }
